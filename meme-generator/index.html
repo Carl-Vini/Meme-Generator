@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-light " id="body-light">
+    <header class="heading">
+        <button class="dark-mode" id="dark-mode">Dark mode</button>
+        <h1 class="welcome">Welcome to the Meme Generator</h1>
+    </header>
+    
+    <section class="container">
+    <div>
+        <textarea name="Write here text on the top of the image" id="top-text" cols="40" rows="5"></textarea>
+        Text size:<input type="range" id="top-text-size-input" min="0.10" max="0.25">
+    </div>
+    <div>
+        <textarea name="Write here the text on the bottom of the image" id="bottom-text" cols="40" rows="5"></textarea>
+        Text size:<input type="range" id="bottom-text-size-input" min="0.10" max="0.25">
+    </div>
+    <div>
+        <input type="file" id="image-input" accept="image/*" class="input-file">
+    </div>
+    <div>
+        <button id="gnt-btn" class="btn">Generate!</button>
+    </div>
+</section>
+    <div>
+        <canvas id="meme-canvas" title="Right-click to save this meme"></canvas>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
