@@ -55,10 +55,19 @@ window.addEventListener('DOMContentLoaded',(event) => {
     });
 });
 
-
+// for the dark mode button
 const dark = document.querySelector('.dark-mode');
 const bodyDark = document.querySelector('.body-light');
-
 dark.addEventListener('click', () => {
     bodyDark.classList.toggle('dark-mode--active');
 })
+
+
+// For lateral menu
+const menu = document.querySelector('.side-menu-button');
+const showMenu = document.querySelector('.lateral-menu');
+
+menu.addEventListener('click', () => {
+    showMenu.classList.toggle("lateral-menu--active");
+} )
+
