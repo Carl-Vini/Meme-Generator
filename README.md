@@ -2,7 +2,7 @@
 
 - Generate your own meme
 - Upload a image
-- wirite the sentences 
+- write the sentences 
 - voilà now you have your own meme
 
 
